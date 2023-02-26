@@ -22,6 +22,7 @@ export default function Home() {
                     <Content/>
                 </div>
             </div>
+            
             <div className='col-span-3'>
                 <RightSidebar/>
             </div>
