@@ -80,20 +80,4 @@ export default [
         github: "https://github.com",
         live: "https://dentistore.online"  
       },
-      {
-        id:6,
-        title: "UniRed",
-        technologies: [
-          { name: "ReactJS", icon: SiReact},
-          { name: "Redux", icon: SiRedux},
-          { name: "Tailwindcss", icon: SiTailwindcss},
-          { name: "Django", icon: SiDjango},
-          { name: "MySql", icon: SiMysql},
-          { name: "Docker", icon: SiDocker},
-          { name: "Linux", icon: SiLinux},
-        ],
-        image: "https://mir-s3-cdn-cf.behance.net/projects/404/7c808f158467145.Y3JvcCwyODc2LDIyNTAsNjQsMA.jpg",
-        github: "https://github.com",
-        live: "https://dentistore.online"  
-      },
 ]
