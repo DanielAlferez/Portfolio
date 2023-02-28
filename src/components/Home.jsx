@@ -28,9 +28,9 @@ export default function Home() {
             <div className='col-span-3 '>
                 <RightSidebar/>
             </div>
-            <div className='col-span-8'>
+            {/* <div className='col-span-8'>
                 <Contact/>
-            </div>
+            </div> */}
         </div>
     </>
     )
