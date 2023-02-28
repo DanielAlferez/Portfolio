@@ -7,7 +7,7 @@ export default function Navbar() {
         <p>Knowledge</p>
         <p>Skills</p>
         <p>Studies</p>
-        {/* <p>Experience</p> */}
+        <p>Experience</p>
         <p>Contact</p>
     </div>
   )
