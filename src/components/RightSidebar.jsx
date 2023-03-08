@@ -8,7 +8,7 @@ import { filterTech } from '../features/technologies/techSlice';
 import { Element } from 'react-scroll';
 import { variants } from '../animations/variants';
 
-export default function RightSidebar({sectionRef}) {
+export default function RightSidebar() {
   const filtered = useSelector((state) => state.techs.filteredProjects);
   const field = useSelector((state) => state.fields.field)
 
@@ -20,8 +20,8 @@ export default function RightSidebar({sectionRef}) {
   }
 
   return (
-    <div className='backdrop-blur-sm bg-gradient-to-b from-black/90 to-black/90'>
-        <motion.div viewport={{once: true}} whileInView={'visible'} variants={variants('up', 0.1, 200)} initial="hidden"  className='lg:overflow-y-scroll lg:h-screen shadow-2xl rounded-2xl bg-white'>
+    <div className='backdrop-blur-sm bg-gradient-to-b from-black/90 to-black/90 lg:pt-0 pt-10'>
+        <motion.div viewport={{once: true}} whileInView={'visible'} variants={variants('scale', 0.1)} initial="hidden"  className='lg:overflow-y-scroll lg:h-screen shadow-2xl rounded-2xl bg-white lg:pb-10 pb-20'>
             <Element name="techSection" className='lg:hidden'/>
             <div className='py-5'>
                 <div className='z-10 rounded-t-2xl grid grid-cols-2 sticky top-0 backdrop-blur-sm bg-white/60 py-3 px-10'>

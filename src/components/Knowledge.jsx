@@ -35,13 +35,13 @@ export default function Knowledge() {
     }
 
   return (
-    <div className='flex flex-col justify-center h-screen backdrop-blur-sm bg-gradient-to-b from-black/90 to-black/90'>
+    <div  className=' flex flex-col justify-center h-screen backdrop-blur-sm bg-black/90'>
         <h1 className='font-bold text-center text- text-white text-5xl py-20'>Knowledge</h1>
         <div className='pb-20 flex justify-center'>
         <div className='lg:px-0 px-10 flex flex-wrap gap-10 max-w-lg justify-center'>
             {technologies.map((tech, i) => (
-                <Link key={i} to={tech.showProjects ? 'techSection' : null} smooth={true} duration={1200}>  
-                    <motion.div viewport={{once: true}} whileInView={'visible'} variants={variants('scale', i+((i*0.2)-i))} initial="hidden" >
+                <Link key={i} to={tech.showProjects ? 'techSection' : '' } smooth={true} duration={1200}>  
+                    <motion.div viewport={{once: true}} whileInView={'visible'} variants={variants('scale', i+((i*0.15)-i))} initial="hidden" >
                         <button 
                         className={`${tech.showProjects ? 'md:cursor-pointer cursor-default' : 'cursor-not-allowed'}  text-white ${tech.color} ${getRandomAmimation()} flex flex-col items-center`}
                         onClick={() => handleTech(tech.name, tech.showProjects, tech.field)}
