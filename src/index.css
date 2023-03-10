@@ -40,8 +40,3 @@ section::-webkit-scrollbar-thumb{
     background-color: #42495b;
     border-radius: 20px;
 }
-
-.nav-link-active:active {
-    background: #000;
-  }
-  

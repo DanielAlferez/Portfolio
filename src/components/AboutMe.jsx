@@ -4,7 +4,7 @@ export default function AboutMe() {
 
 
   return (
-        <div className='pb-80 backdrop-blur-sm bg-gradient-to-b from-gray-900/90 to-black/90 flex flex-col items-center px-10 justify-center'>
+        <div className='h-full backdrop-blur-sm bg-gradient-to-b from-gray-900/90 to-black/90 flex flex-col items-center px-10 justify-center'>
             <div className='text-white text-lg flex flex-col max-w-2xl pr-5'>
                 <h1 className='font-semibold text-2xl text-center  mb-5'>ABOUT ME</h1>
                 <p className=''>I am so passionate person who love learning, I never stop doing it. Knowledge is very important to me. I have a lot of empathy and patience, i like to analyze the world and all aspects of life</p>
