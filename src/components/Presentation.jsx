@@ -5,10 +5,11 @@ import { SiGithub, SiLinkedin, SiTelegram } from "react-icons/si";
 import { motion } from 'framer-motion';
 import { variants } from '../animations/variants';
 import { Link } from 'react-scroll';
+import { RxDoubleArrowDown } from "react-icons/rx";
 
 export default function Presentation() {
   return (
-    <div className='lg:mt-0 -mt-10 flex flex-col lg:flex-row items-center justify-center h-screen max-h-screen bg-gradient-to-b backdrop-blur-sm from-gray-800/90 to-gray-900/90'>
+    <div className='lg:mt-0 -mt-10 flex relative flex-col lg:flex-row items-center justify-center h-screen max-h-screen bg-gradient-to-b backdrop-blur-sm from-gray-800/90 to-gray-900/90'>
         <div className='flex flex-col items-center lg:items-end'>
           <div className='flex text-white flex-col'>
               <motion.h1 viewport={{once: true}} whileInView={'visible'} variants={variants('left', 0.2, 40)} initial="hidden" className='text-3xl md:text-4xl 2xl:text-5xl text-left'>Hi! I Am</motion.h1>
@@ -52,6 +53,11 @@ export default function Presentation() {
               <SiTelegram className='w-8 h-8 hover:animate-up-box animate-down-box hover:text-sky-400 cursor-pointer'/>
             </motion.div>
           </div>
+        </div>
+        <div className='lg:block hidden absolute left-1/2 -translate-x-1/2 bottom-0 mb-5 text-white/70'>
+          <Link to='Skills' smooth={true} duration={1200} className='cursor-pointer flex flex-col justify-center items-center'>
+            <RxDoubleArrowDown className='animate-pulse w-12 h-12'/>
+          </Link>
         </div>
     </div>
   )
