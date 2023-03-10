@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 export default function Presentation() {
   return (
-    <div className='lg:pt-0 -pt-10 grid lg:grid-cols-2 place-content-center h-screen max-h-screen bg-gradient-to-b backdrop-blur-sm from-gray-800/90 to-gray-900/90'>
+    <div className='lg:pt-0 -mt-10 grid lg:grid-cols-2 place-content-center h-screen max-h-screen bg-gradient-to-b backdrop-blur-sm from-gray-800/90 to-gray-900/90'>
         <div className='flex flex-col items-center lg:items-end'>
           <div className='flex text-white flex-col'>
               <motion.h1 viewport={{once: true}} whileInView={'visible'} variants={variants('left', 0.2, 40)} initial="hidden" className='text-3xl md:text-4xl 2xl:text-5xl text-left'>Hi! I Am</motion.h1>
