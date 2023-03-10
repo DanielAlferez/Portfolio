@@ -35,7 +35,7 @@ export default function Knowledge() {
     }
 
   return (
-    <div  className=' flex flex-col justify-center h-[35em] backdrop-blur-sm bg-black/90'>
+    <div  className=' flex flex-col justify-center h-screen backdrop-blur-sm bg-black/90'>
         <h1 className='font-bold text-center text- text-white text-5xl py-20'>Knowledge</h1>
         <div className='pb-20 flex justify-center'>
         <div className='lg:px-0 px-10 flex flex-wrap gap-10 max-w-lg justify-center'>
