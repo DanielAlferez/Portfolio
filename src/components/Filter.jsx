@@ -16,6 +16,7 @@ export default function Filter() {
   return (
     <div className='flex flex-wrap justify-center text-white gap-2 my-10'>
         <button onClick={() => handleTech('All')} className={`${activeTech === 'All' ? 'bg-gray-800 text-white' : 'text-gray-800 border border-gray-800'} rounded-xl py-1 px-3 font-semibold`}>All</button>
+        <button onClick={() => handleTech(field)} className={`${activeTech === field ? 'bg-gray-800 text-white' : 'text-gray-800 border border-gray-800'} rounded-xl py-1 px-3 font-semibold`}>{field}</button>
         {technologies.map((tech, i) => (
           <button key={i} onClick={() => handleTech(tech.name)} className={`${tech.showProjects ? 'block' : 'hidden'} ${activeTech === tech.name ? 'bg-gray-800 text-white' : 'text-gray-800 border border-gray-800'} ${field === tech.field ? 'block' : 'hidden'} rounded-xl py-1 px-3 font-semibold`}>{tech.name}</button>    
         ))}

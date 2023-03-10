@@ -16,12 +16,12 @@ export default function RightSidebar() {
 
   const handleField = (field) => {
     dispatch(selectField(field))
-    dispatch(filterTech({activeTech:"All"}))
+    dispatch(filterTech({activeTech: field}))
   }
 
   return (
     <div className='backdrop-blur-sm bg-gradient-to-b from-black/90 to-black/90 lg:pt-0 pt-10'>
-        <motion.div viewport={{once: true}} whileInView={'visible'} variants={variants('scale', 0.1)} initial="hidden"  className='lg:overflow-y-scroll lg:h-screen shadow-2xl rounded-2xl bg-white lg:pb-10 pb-20'>
+        <motion.section viewport={{once: true}} whileInView={'visible'} variants={variants('right', 0.05, 10)} initial="hidden"  className='lg:overflow-y-scroll lg:h-screen shadow-2xl rounded-2xl bg-white lg:pb-10 pb-20'>
             <Element name="techSection" className='lg:hidden'/>
             <div className='py-5'>
                 <div className='z-10 rounded-t-2xl grid grid-cols-2 sticky top-0 backdrop-blur-sm bg-white/60 py-3 px-10'>
@@ -50,7 +50,7 @@ export default function RightSidebar() {
                     </AnimatePresence>
                 </motion.div>
             </div>
-        </motion.div>
+        </motion.section>
     </div>
   )
 }

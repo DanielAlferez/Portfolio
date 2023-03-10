@@ -20,11 +20,13 @@ export default function Presentation() {
             <p className='2xl:text-xl text-lg'>Villavicencio, Colombia</p>
           </motion.div>
           <div className='flex gap-2 mt-5 font-bold'>
-            <motion.button viewport={{once: true}} whileInView={'visible'} variants={variants('left', 1.4, 10)} initial="hidden"  className='flex items-center rounded-lg p-2 bg-white text-gray-800 hover:bg-gray-800 hover:text-white group'>
-              <p>Download CV</p>
+            <motion.button viewport={{once: true}} whileInView={'visible'} variants={variants('right', 1.4, 10)} initial="hidden"  className='flex items-center rounded-lg p-2 bg-white text-gray-800 hover:bg-gray-800 hover:text-white group'>
+              <a href={PROFILE} target="_blank" rel='noopener noreferrer' download="DanielAlferez">
+                Download CV
+              </a>
               <MdDownload className='w-6 h-6 ml-1 group-hover:animate-pulse'/>
             </motion.button>
-            <motion.button viewport={{once: true}} whileInView={'visible'} variants={variants('right', 1.4, 10)} initial="hidden"  className='flex justify-center items-center rounded-lg p-2 bg-white text-gray-800 hover:bg-gray-800 hover:text-white group'>
+            <motion.button viewport={{once: true}} whileInView={'visible'} variants={variants('left', 1.4, 10)} initial="hidden"  className='flex justify-center items-center rounded-lg p-2 bg-white text-gray-800 hover:bg-gray-800 hover:text-white group'>
               <p>Contact Me</p>
               <MdOutlineSend className='w-6 h-6 ml-1 group-hover:animate-pulse'/>
             </motion.button>

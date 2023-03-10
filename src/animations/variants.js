@@ -3,7 +3,7 @@ export const variants = (direction, delay, move) => {
         hidden: {
             y: direction === 'up' ? move : direction === 'down' ? -move : 0,
             opacity: 0,
-            scale: direction === 'scale' ? 0.8 : 1, 
+            scale: direction === 'scale' ? 0.95 : 1, 
             x: direction === 'left' ? move : direction === 'right' ? -move : 0,
 
         },
