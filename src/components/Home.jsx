@@ -1,16 +1,15 @@
 import React from 'react'
 import RightSidebar from "./RightSidebar";
 import Presentation from './Presentation';
-import Back from "../assets/back.jpg"
 import Knowledge from './Knowledge';
 import AboutMe from './AboutMe';
 import Navbar from './Navbar';
+import ContactForm from './ContatctForm';
 
 export default function Home() {
-
   return (
     <>
-        <div style={{backgroundImage: `url(${Back})`, 
+        <div style={{backgroundImage: `url(https://cdn.pixabay.com/photo/2020/06/01/13/02/mountains-5246545_960_720.jpg)`, 
             backgroundRepeat: 'no-repeat',
             backgroundPositionX: 'center',
             backgroundSize: 'cover',
@@ -35,6 +34,9 @@ export default function Home() {
             <div className='hidden lg:block fixed -translate-y-1/2 lg:top-1/2'>
                 <Navbar/>
             </div>
+            {/* <div className='fixed inset-0 flex justify-center items-center bg-gray-900/60'>
+                <ContactForm/>
+            </div> */}
         </div>
     </>
     )
