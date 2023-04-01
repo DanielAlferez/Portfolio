@@ -1,5 +1,6 @@
 import React from 'react'
-import PROFILE from "../assets/Young-Man-PNG-Clipart.png";
+import PROFILE from "../assets/Profile.png";
+import CV from "../assets/Portfolio_DanielAlferez.pdf";
 import { MdPlace, MdOutlineSend, MdDownload } from "react-icons/md";
 import { SiGithub, SiLinkedin, SiTelegram } from "react-icons/si";
 import { Link } from 'react-scroll';
@@ -27,7 +28,7 @@ export default function Presentation() {
           </div>
           <div className='flex gap-2 mt-5 font-bold'>
             <button className='flex items-center rounded-lg p-2 bg-white text-gray-800 hover:bg-gray-200 group'>
-              <a href={PROFILE} target="_blank" rel='noopener noreferrer' download="DanielAlferez">
+              <a href={CV} target="_blank" rel='noopener noreferrer' download="DanielAlferez">
                 Download CV
               </a>
               <MdDownload className='w-6 h-6 ml-1 group-hover:animate-pulse'/>
