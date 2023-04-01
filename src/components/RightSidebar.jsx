@@ -38,8 +38,8 @@ export default function RightSidebar() {
                 <div className='col-span-2 px-10'>
                     <hr className='my-2'/>
                     <h1 className='text-left font-semibold text-2xl my-5'>Look at my projects!</h1>
-                    <p className={`${field === "Backend" ? 'block' : 'hidden'} mb-10`}>I have experience working with popular frameworks such as Django, Flask, and FastAPI. I have used these frameworks to build robust and scalable web applications. For database management, I have worked with a variety of popular systems including MongoDB, MySQL, and PostgreSQL. Depending on the specific needs of the project and have experience with designing, configuring, and optimizing databases for optimal performance.</p>
-                    <p className={`${field === "Frontend" ? 'block' : 'hidden'} mb-10`}>I have experience working with popular frameworks such as React, Tailwind, and Redux. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam officia ea minus ducimus, reiciendis dolore vero porro, enim quidem modi aperiam tenetur. Voluptas animi amet consectetur at, eos fugit nostrum non quasi assumenda enim iste consequatur, libero accusamus! Dignissimos, sunt?</p>
+                    <p className={`${field === "Backend" ? 'block' : 'hidden'} mb-10`}>I have experience working with popular frameworks such as Django and Flask. I have used these frameworks to build web applications. For database management, I have worked with MySQL and PostgreSQL.</p>
+                    <p className={`${field === "Frontend" ? 'block' : 'hidden'} mb-10`}>I have experience working with popular frameworks such as React, Tailwind, and Redux ToolKit</p>
                     <Filter/>
                 </div>
                 <motion.div animate={{ opacity: 1 }} layout className='col-span-3 mx-4 gap-5 items-center flex flex-wrap justify-center'>

@@ -20,7 +20,7 @@ export default function Presentation() {
               <h1 className='text-3xl md:text-4xl 2xl:text-5xl text-left'>Hi! I Am</h1>
               <p className='ml-10 text-4xl md:text-5xl 2xl:text-6xl font-bold'>Daniel Alferez</p>
           </div>
-          <h1 className='text-white p-2 mt-5 text-3xl 2xl:text-4xl font-medium'>Full Stack Developer</h1>
+          <h1 className='text-white p-2 mt-5 text-3xl 2xl:text-4xl font-medium'>Software Developer</h1>
           <div className='text-white flex items-center'>
             <MdPlace className='w-7 h-7 2xl:w-8 2xl:h-8'/>
             <p className='2xl:text-xl text-lg'>Villavicencio, Colombia</p>
@@ -58,15 +58,15 @@ export default function Presentation() {
             <img src={PROFILE} className='object-cover w-full h-full object-top' />
           </div>
           <div className='text-white flex items-center gap-3 my-3'>
-            <div >
+            <a href="https://linkedin.com/in/daniel-camilo-alférez-garcía-639786255/" target="_blank">
               <SiLinkedin className='w-8 h-8 hover:text-blue-500 cursor-pointer'/>
-            </div>
-            <div >
+            </a>
+            <a href="https://github.com/DanielAlferez" target="_blank">
               <SiGithub className='w-8 h-8 hover:text-gray-700 cursor-pointer'/>
-            </div>
-            <div >
+            </a>
+            <a href="https://t.me/DanielAlferez" target="_blank">
               <SiTelegram className='w-8 h-8 hover:text-sky-400 cursor-pointer'/>
-            </div>
+            </a>
           </div>
         </div>
         <div className='lg:block hidden absolute left-1/2 -translate-x-1/2 bottom-0 mb-5 text-white/70'>

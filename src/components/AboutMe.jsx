@@ -4,17 +4,21 @@ import { IoMdSchool } from "react-icons/io";
 
 export default function AboutMe() {
   return (
-        <div className='gap-y-32 gap-x-14 py-10  lg:h-screen  backdrop-blur-sm bg-gradient-to-b from-gray-900/90 to-black/90 grid lg:grid-cols-2 items-center px-10 lg:px-28 justify-center '>
+        <div className='gap-y-32 gap-x-14 py-10 min-h-screen backdrop-blur-sm bg-gradient-to-b from-gray-900/90 to-black/90 grid lg:grid-cols-2 items-center px-10 lg:px-28 justify-center '>
             <div>
                 <div className='text-white text-lg flex flex-col'>
                     <h1 className='font-semibold text-2xl text-center  mb-5'>ABOUT ME</h1>
-                    <p className=''>I am so passionate person who love learning, I never stop doing it. Knowledge is very important to me. I have a lot of empathy and patience, i like to analyze the world and all aspects of life</p>
+                    <p className=''>I have a strong passion for learning and personal growth. I approach life with empathy and patience, always striving to understand different perspectives. I am dedicated to delivering excellent results and continuously seeking to improve. I believe in the importance of continuous learning and development in both my personal and professional life. </p>
                 </div>
                 <div className='text-white text-center'>
                     <h1 className='font-semibold text-2xl text-center mt-10 mb-5'>SKILLS</h1>
                     <div className='font-medium text-xl grid grid-cols-2'>
                         <p>Teamwork</p>
-                        <p>Empathy</p>
+                        <p>Critical Thinking</p>
+                        <p>Effective Communication</p>
+                        <p>Problem-Solving</p>
+                        <p>Adaptability</p>
+                        <p>Creativity</p>
                     </div>
                 </div>
                 <div className='text-white text-center'>
@@ -39,7 +43,7 @@ export default function AboutMe() {
                                     <hr className='opacity-10'/>
                                     <h1 className='font-bold mt-1'>{exp.title}</h1>
                                     <p className='font-light text-lg mb-3'>{exp.place}</p>
-                                    <p className='text-lg'>{exp.description}</p>
+                                    <p className='text-sm'>{exp.description}</p>
                                 </div>
                             </div>
                             <div className='col-start-3 flex justify-center'>
@@ -53,7 +57,7 @@ export default function AboutMe() {
                                     <hr className='opacity-10'/>
                                     <h1 className='font-bold mt-1'>{exp.title}</h1>
                                     <p className='font-light text-lg mb-3'>{exp.place}</p>
-                                    <p className='text-lg'>{exp.description}</p>
+                                    <p className='text-sm'>{exp.description}</p>
                                 </div>
                             </div>
                         </>
