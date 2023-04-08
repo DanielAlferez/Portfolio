@@ -7,7 +7,6 @@ This is an online portfolio for developers, featuring a responsive design, inter
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [About the Project](#about-the-project)
 - [License](#license)
 
 ## Introduction
