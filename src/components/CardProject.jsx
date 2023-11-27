@@ -8,7 +8,7 @@ export default function CardProject({project}) {
   return (
     <motion.div layout animate={{opacity: 1}} initial={{opacity: 0}} exit={{opacity: 0}} className='md:cursor-pointer overflow-hidden group relative bg-gray-100 rounded-3xl h-48 w-80'>
       <div className='h-full w-full rounded-3xl group-hover:scale-105 duration-700'>
-        <img src={project.image} loading='lazy' className='w-full h-full'/>    
+        <img src={project.image} loading='lazy' className='w-full h-full object-cover'/>    
         <div className={`${project.image ? 'hidden' : 'block'} absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center text-gray-300 font-bold text-xl`}>
           <div className='flex flex-col items-center'>
             <TbFaceIdError className='w-14 h-14'/>

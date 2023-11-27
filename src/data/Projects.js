@@ -2,6 +2,8 @@ import { SiRedux, SiAmazonaws, SiReact, SiDjango, SiFlask, SiFastapi, SiDocker, 
 import dentistore from "../assets/dentistore.png"
 import colegio from "../assets/colegio.png"
 import portfolio from "../assets/portfolio.png"
+import mercaorinoquia from "../assets/Mercaorinoquia.png"
+import AQ from "../assets/A&Q.png"
 
 export default [
     {
@@ -36,7 +38,7 @@ export default [
         title: "Portfolio",
         technologies: [
           { name: "ReactJS", icon: SiReact},
-          { name: "Redux", icon: SiRedux},
+          { name: "Redux - Redux Toolkit", icon: SiRedux},
           { name: "Tailwindcss", icon: SiTailwindcss},
         ],
         image: portfolio,
@@ -48,7 +50,7 @@ export default [
         title: "MariaMontessori",
         technologies: [
           { name: "ReactJS", icon: SiReact},
-          { name: "Redux", icon: SiRedux},
+          { name: "Redux - Redux Toolkit", icon: SiRedux},
           { name: "Tailwindcss", icon: SiTailwindcss},
           { name: "Django", icon: SiDjango},
           { name: "Postgresql", icon: SiPostgresql},
@@ -59,5 +61,33 @@ export default [
         frontend: "https://github.com/DanielAlferez/Frontend-MariaMontessori",
         backend: "https://github.com/DanielAlferez/Backend_Maria_Montessori",
         demo: "https://maria-montessori.netlify.app" 
+      },
+      {
+        id:5,
+        title: "Mercaorinoquia",
+        technologies: [
+          { name: "ReactJS", icon: SiReact},
+          { name: "Redux - Redux Toolkit", icon: SiRedux},
+          { name: "Tailwindcss", icon: SiTailwindcss},
+          { name: "Django", icon: SiDjango},
+          { name: "Postgresql", icon: SiPostgresql},
+          { name: "Linux", icon: SiLinux},
+        ],
+        image: mercaorinoquia,
+        demo: "https://mercaorinoquia.netlify.app" 
+      },
+      {
+        id:6,
+        title: "A&Q",
+        technologies: [
+          { name: "ReactJS", icon: SiReact},
+          { name: "Redux - Redux Toolkit", icon: SiRedux},
+          { name: "Tailwindcss", icon: SiTailwindcss},
+          { name: "Django", icon: SiDjango},
+          { name: "Postgresql", icon: SiPostgresql},
+          { name: "Linux", icon: SiLinux},
+        ],
+        image: AQ,
+        demo: "https://ayqingenieria.netlify.app" 
       },
 ]
