@@ -1,32 +1,28 @@
 import React from 'react'
-import RightSidebar from "./RightSidebar";
 import Presentation from './Presentation';
-import Knowledge from './Knowledge';
 import AboutMe from './AboutMe';
 import Navbar from './Navbar';
 import ContactForm from './ContatctForm';
+import Projects from './Projects';
 
 export default function Home() {
   return (
     <>
-        <div style={{backgroundImage: `url(https://cdn.pixabay.com/photo/2020/06/01/13/02/mountains-5246545_960_720.jpg)`, 
+        <div style={{backgroundImage: `url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVybiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D)`,
             backgroundRepeat: 'no-repeat',
             backgroundPositionX: 'center',
             backgroundSize: 'cover',
             }}
-            className='lg:grid flex flex-col grid-cols-8 relative'
+            className='flex flex-col relative'
         >
-            <div id='Home' className='col-span-8'>
+            <div id='Home'>
                 <Presentation/>  
             </div>
-            <div id='Skills' className='col-span-8'>
+            <div id='Skills'>
                 <AboutMe/>
             </div>
-            <div id='Projects'className='col-span-5'>
-                <Knowledge/>
-            </div>
-            <div className='col-span-3 '>
-                <RightSidebar/>
+            <div id='Projects'>
+                <Projects/>
             </div>
             <div className='block lg:hidden bottom-0 fixed left-1/2 -translate-x-1/2 '>
                 <Navbar/>
